@@ -1,7 +1,7 @@
 /* Google Analytics 4
    To turn tracking on, paste your Measurement ID between the quotes below
    (it looks like G-XXXXXXXXXX), then save. Nothing is tracked while it is empty. */
-var GA_MEASUREMENT_ID = '';
+var GA_MEASUREMENT_ID = 'G-QE1JS1JBGF';
 
 (function () {
   if (!GA_MEASUREMENT_ID) return;
