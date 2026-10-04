@@ -86,11 +86,13 @@ a.hl:hover { background-image: linear-gradient(var(--hl), var(--hl)); }
 .now-text { flex: 999 1 320px; margin: 0; padding: 22px 24px; font-size: 19px; line-height: 1.6; border-left: 1px solid var(--ink); }
 .cells { display: grid; border-top: 1px solid var(--ink); border-left: 1px solid var(--ink); }
 .cells > * { border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
-.focus-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
-.focus-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; padding: 18px 0; border-bottom: 1px solid var(--ink); }
-.focus-list .num { color: var(--muted); }
-.focus-name { flex: 1 1 260px; font-size: 24px; line-height: 1.25; }
-.focus-link { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+.focus-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.focus-list li { display: grid; grid-template-columns: 18px minmax(0, 1fr); column-gap: 16px; align-items: baseline; }
+.focus-list li .sw { position: relative; top: 2px; }
+.focus-text { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 16px; }
+.focus-name { font-size: 24px; line-height: 1.25; }
+.focus-link { color: var(--muted); }
+.focus-link { display: inline-flex; align-items: center; min-height: 36px; text-decoration: none; }
 .focus-link:hover { text-decoration: underline; text-decoration-color: var(--accent-1); text-decoration-thickness: 2px; text-underline-offset: 5px; }
 .sw { flex: 0 0 auto; width: 18px; height: 18px; border: 1px solid var(--ink); }
 
