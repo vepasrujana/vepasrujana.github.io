@@ -9,7 +9,7 @@
 <meta property="og:description" content="Brand attention turned out to matter twice as much for memory as the picture.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="analytics.js"></script>
 </head>
@@ -23,36 +23,46 @@
 <a href="https://www.linkedin.com/in/sai-srujana-vepa/">LinkedIn</a>
 </div>
 </nav>
-<main class="c-s2">
-<a class="back" href="projects">← All projects</a>
+<main>
+<a class="back label" href="projects">← All projects</a>
 <header class="page-head writeup-head">
-<p class="eyebrow ink">Advertising · Consulting case study · Team of 5 · Fall 2024</p>
+<p class="label">Advertising · Consulting case study · Team of 5 · Fall 2024</p>
 <h1>L'Oréal's Ad Was Seen but Not Remembered. Eye-Tracking Data Showed Why.</h1>
 </header>
 <dl class="meta">
-<div><dt>Industry</dt><dd>Beauty, print advertising</dd></div>
-<div><dt>Tools</dt><dd>SAS</dd></div>
-<div class="wide"><dt>Methods</dt><dd>Poisson regression, binary logit, BIC model selection, what-if simulation</dd></div>
+<div><dt class="label">Industry</dt><dd>Beauty, print advertising</dd></div>
+<div><dt class="label">Tools</dt><dd>SAS</dd></div>
+<div class="wide"><dt class="label">Methods</dt><dd>Poisson regression, binary logit, BIC model selection, what-if simulation</dd></div>
 </dl>
-<div class="tiles"><div class="tile tint"><p class="tile-value ink">18% → 50%</p><p class="tile-label ink">projected brand recall</p></div><div class="tile tint"><p class="tile-value ink">66%</p><p class="tile-label ink">fewer brand fixations than competing ads</p></div><div class="tile tint"><p class="tile-value ink">+7.1%</p><p class="tile-label ink">recall odds per brand fixation</p></div></div>
+<div class="tiles k-s2"><div class="tile"><p class="tile-value">18% → 50%</p><p class="label tile-label">projected brand recall</p></div><div class="tile"><p class="tile-value">66%</p><p class="label tile-label">fewer brand fixations than competing ads</p></div><div class="tile"><p class="tile-value">+7.1%</p><p class="label tile-label">recall odds per brand fixation</p></div></div>
+<div class="writeup-layout">
+<aside class="toc" aria-label="Contents">
+<p class="label">Contents</p>
+<ol><li><a href="#executive-summary"><span class="label">01</span>Executive summary</a></li><li><a href="#objective"><span class="label">02</span>Objective</a></li><li><a href="#data-and-approach"><span class="label">03</span>Data and approach</a></li><li><a href="#key-findings"><span class="label">04</span>Key findings</a></li><li><a href="#recommendations"><span class="label">05</span>Recommendations</a></li><li><a href="#my-role"><span class="label">06</span>My role</a></li><li><a href="#limitations-and-what-i-d-do-next"><span class="label">07</span>Limitations and what I'd do next</a></li></ol>
+</aside>
 <article class="writeup">
-<section class="summary"><h2>Executive summary</h2><p>Using eye-tracking data from 88 people paging through an issue of Cosmopolitan, we measured what draws attention to an ad's brand and pictorial elements, and what makes readers remember the brand. L'Oréal's ad underperformed. It drew 66% fewer brand fixations and 26% fewer pictorial fixations than competing ads with comparable design and placement, and only 18% of readers recalled the brand, against 52% for other ads. Attention to the brand mattered about twice as much for memory as attention to the picture. We recommended a larger brand element (8 sq. in., up from 4.4) on a right-hand page near the back of the magazine. This is projected to raise brand recall from 18% to 50%.</p></section>
-<section><h2>Objective</h2><p>Diagnose why L'Oréal's ad performed poorly and identify design and placement changes that would raise both attention to the brand and recall of it.</p></section>
-<section><h2>Data and approach</h2><p>The data covered 3,080 ad views (35 ads × 88 participants), recording page number, left or right page, the size of the brand and pictorial elements, fixation counts on each, and whether the reader correctly recalled the brand afterward. We engineered 2 new variables: a page position × page number interaction and a pictorial-to-brand size ratio. We built Poisson regressions for brand and pictorial fixation counts and a binary logit for brand recall, comparing 3 specifications per model using BIC. We then ran what-if simulations across element sizes and page numbers, assuming 60 sq. in. of total ad space and a pictorial larger than the brand element.</p></section>
-<section><h2>Key findings</h2><ul><li><strong>Size drives attention.</strong> Each additional square inch of brand element raised brand fixations by 3.7%. Each additional square inch of pictorial raised pictorial fixations by 1.8%.</li><li><strong>Right-hand pages draw the eye.</strong> Ads on right-hand pages drew 78% more brand fixations.</li><li><strong>Brand attention drives memory.</strong> Each brand fixation raised recall odds by 7.1%, vs. 3.7% for each pictorial fixation.</li><li><strong>Placement and memory interact.</strong> The right-page effect on recall depended on where the ad sat. It was negative early in the magazine and turned positive past roughly page 42.</li><li><strong>L'Oréal's specific gap.</strong> Holding design and placement constant, L'Oréal's ad drew 66% fewer brand fixations and 26% fewer pictorial fixations, and had 66% lower recall odds.</li></ul></section>
-<section><h2>Recommendations</h2><ol><li>Enlarge the brand element from 4.4 to 8 sq. in. and keep the pictorial at about 52 sq. in. This is the smallest design change with a meaningful gain, raising expected brand fixations from 0.56 to 0.72.</li><li>Move the ad to a right-hand page near the back of the magazine (page 127). The move alone raises projected recall from 18% to 47%. With the redesign, it reaches 50%.</li><li>If the design can carry a larger brand element (15 sq. in. brand with a 45 sq. in. pictorial), projected recall rises to 57%.</li></ol></section>
-<section class="role c-a1 tint"><h2 class="role-label c-a1 ink">My role</h2><p>Worked across every stage: data exploration, variable engineering, model building and selection in SAS, the what-if simulations, and writing the recommendations.</p></section>
-<section><h2>Limitations and what I'd do next</h2><ul><li>L'Oréal had only 1 ad in the study, so the "L'Oréal effect" may reflect that single creative rather than the brand itself.</li><li>The study used a single magazine issue in a lab setting, and page 127 sits at the edge of the observed range. Real reading behavior and other publications may differ.</li><li>Fixation counts are often more spread out than a Poisson model assumes. Next, I would test a negative binomial model to check that the effects hold.</li></ul></section>
+<section id="executive-summary" class="summary"><h2>Executive summary</h2><p>Using eye-tracking data from 88 people paging through an issue of Cosmopolitan, we measured what draws attention to an ad's brand and pictorial elements, and what makes readers remember the brand. L'Oréal's ad underperformed. It drew 66% fewer brand fixations and 26% fewer pictorial fixations than competing ads with comparable design and placement, and only 18% of readers recalled the brand, against 52% for other ads. Attention to the brand mattered about twice as much for memory as attention to the picture. We recommended a larger brand element (8 sq. in., up from 4.4) on a right-hand page near the back of the magazine. This is projected to raise brand recall from 18% to 50%.</p></section>
+<section id="objective"><h2>Objective</h2><p>Diagnose why L'Oréal's ad performed poorly and identify design and placement changes that would raise both attention to the brand and recall of it.</p></section>
+<section id="data-and-approach"><h2>Data and approach</h2><p>The data covered 3,080 ad views (35 ads × 88 participants), recording page number, left or right page, the size of the brand and pictorial elements, fixation counts on each, and whether the reader correctly recalled the brand afterward. We engineered 2 new variables: a page position × page number interaction and a pictorial-to-brand size ratio. We built Poisson regressions for brand and pictorial fixation counts and a binary logit for brand recall, comparing 3 specifications per model using BIC. We then ran what-if simulations across element sizes and page numbers, assuming 60 sq. in. of total ad space and a pictorial larger than the brand element.</p></section>
+<section id="key-findings"><h2>Key findings</h2><ul><li><strong>Size drives attention.</strong> Each additional square inch of brand element raised brand fixations by 3.7%. Each additional square inch of pictorial raised pictorial fixations by 1.8%.</li><li><strong>Right-hand pages draw the eye.</strong> Ads on right-hand pages drew 78% more brand fixations.</li><li><strong>Brand attention drives memory.</strong> Each brand fixation raised recall odds by 7.1%, vs. 3.7% for each pictorial fixation.</li><li><strong>Placement and memory interact.</strong> The right-page effect on recall depended on where the ad sat. It was negative early in the magazine and turned positive past roughly page 42.</li><li><strong>L'Oréal's specific gap.</strong> Holding design and placement constant, L'Oréal's ad drew 66% fewer brand fixations and 26% fewer pictorial fixations, and had 66% lower recall odds.</li></ul></section>
+<section id="recommendations"><h2>Recommendations</h2><ol><li>Enlarge the brand element from 4.4 to 8 sq. in. and keep the pictorial at about 52 sq. in. This is the smallest design change with a meaningful gain, raising expected brand fixations from 0.56 to 0.72.</li><li>Move the ad to a right-hand page near the back of the magazine (page 127). The move alone raises projected recall from 18% to 47%. With the redesign, it reaches 50%.</li><li>If the design can carry a larger brand element (15 sq. in. brand with a 45 sq. in. pictorial), projected recall rises to 57%.</li></ol></section>
+<section id="my-role" class="role box"><h2>My role</h2><p>Worked across every stage: data exploration, variable engineering, model building and selection in SAS, the what-if simulations, and writing the recommendations.</p></section>
+<section id="limitations-and-what-i-d-do-next"><h2>Limitations and what I'd do next</h2><ul><li>L'Oréal had only 1 ad in the study, so the "L'Oréal effect" may reflect that single creative rather than the brand itself.</li><li>The study used a single magazine issue in a lab setting, and page 127 sits at the edge of the observed range. Real reading behavior and other publications may differ.</li><li>Fixation counts are often more spread out than a Poisson model assumes. Next, I would test a negative binomial model to check that the effects hold.</li></ul></section>
 </article>
-<a class="next c-a3 tint" href="promotion-effects">
-<span class="next-text"><span class="next-label ink">Next case study · Promotions</span><span class="next-title">Displays Beat Discounts in the Laundry Aisle</span></span>
-<span class="next-arrow ink" aria-hidden="true">→</span>
+</div>
+<a class="next" href="promotion-effects">
+<span class="next-block k-a3"><span class="label">Next</span></span>
+<span class="next-text"><span class="label muted">Promotions</span><span class="next-title">Displays Beat Discounts in the Laundry Aisle</span></span>
+<span class="next-arrow" aria-hidden="true">→</span>
 </a>
 </main>
 <footer class="footer">
+<div class="footer-links">
 <a href="mailto:vepasrujana@gmail.com">vepasrujana@gmail.com</a>
 <a href="https://www.linkedin.com/in/sai-srujana-vepa/">LinkedIn</a>
 <a href="https://github.com/vepasrujana">GitHub</a>
+</div>
+
 </footer>
 </div>
 </body>

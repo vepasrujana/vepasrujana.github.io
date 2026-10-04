@@ -9,7 +9,7 @@
 <meta property="og:description" content="When it comes to what they want from a grocery store, shoppers in Asturias have more in common with shoppers in Hamburg than with their neighbors in Cantabria.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="analytics.js"></script>
 </head>
@@ -23,36 +23,46 @@
 <a href="https://www.linkedin.com/in/sai-srujana-vepa/">LinkedIn</a>
 </div>
 </nav>
-<main class="c-a1">
-<a class="back" href="projects">← All projects</a>
+<main>
+<a class="back label" href="projects">← All projects</a>
 <header class="page-head writeup-head">
-<p class="eyebrow ink">Segmentation · Consulting case study · Team of 5 · Fall 2024</p>
+<p class="label">Segmentation · Consulting case study · Team of 5 · Fall 2024</p>
 <h1>Which Parts of Europe Want a Whole Foods?</h1>
 </header>
 <dl class="meta">
-<div><dt>Industry</dt><dd>Grocery retail, international expansion</dd></div>
-<div><dt>Tools</dt><dd>GLIMMIX, R</dd></div>
-<div class="wide"><dt>Methods</dt><dd>Correlation analysis, mixture (latent class) regression, BIC, posterior membership probabilities</dd></div>
+<div><dt class="label">Industry</dt><dd>Grocery retail, international expansion</dd></div>
+<div><dt class="label">Tools</dt><dd>GLIMMIX, R</dd></div>
+<div class="wide"><dt class="label">Methods</dt><dd>Correlation analysis, mixture (latent class) regression, BIC, posterior membership probabilities</dd></div>
 </dl>
-<div class="tiles"><div class="tile tint"><p class="tile-value ink">105</p><p class="tile-label ink">regions segmented</p></div><div class="tile tint"><p class="tile-value ink">69%</p><p class="tile-label ink">of regions in the service- and atmosphere-driven segment</p></div><div class="tile tint"><p class="tile-value ink">about 2x</p><p class="tile-label ink">weight on atmosphere vs. the price-driven segment</p></div></div>
+<div class="tiles k-a2"><div class="tile"><p class="tile-value">105</p><p class="label tile-label">regions segmented</p></div><div class="tile"><p class="tile-value">69%</p><p class="label tile-label">of regions in the service- and atmosphere-driven segment</p></div><div class="tile"><p class="tile-value">about 2x</p><p class="label tile-label">weight on atmosphere vs. the price-driven segment</p></div></div>
+<div class="writeup-layout">
+<aside class="toc" aria-label="Contents">
+<p class="label">Contents</p>
+<ol><li><a href="#executive-summary"><span class="label">01</span>Executive summary</a></li><li><a href="#objective"><span class="label">02</span>Objective</a></li><li><a href="#data-and-approach"><span class="label">03</span>Data and approach</a></li><li><a href="#key-findings"><span class="label">04</span>Key findings</a></li><li><a href="#recommendations"><span class="label">05</span>Recommendations</a></li><li><a href="#my-role"><span class="label">06</span>My role</a></li><li><a href="#limitations-and-what-i-d-do-next"><span class="label">07</span>Limitations and what I'd do next</a></li></ol>
+</aside>
 <article class="writeup">
-<section class="summary"><h2>Executive summary</h2><p>Whole Foods, positioned on service and store experience rather than price, was weighing entry into Europe. Using a European Commission survey of 1,669 shoppers in 105 regions across 7 countries, we grouped regions, not countries, by what drives shoppers' image of their grocery store. A 2-segment mixture regression revealed a service- and atmosphere-driven segment covering 69% of regions and a smaller price-driven segment. The segments cut across national borders. We recommended targeting the service- and atmosphere-driven segment, entering through eastern Germany and France and northern Spain and Italy, positioned on service quality and a localized atmosphere.</p></section>
-<section><h2>Objective</h2><p>Identify which European regions best match Whole Foods' positioning, and recommend where to enter, how to position and how to roll out.</p></section>
-<section><h2>Data and approach</h2><p>Shoppers rated their main grocery store on overall image and on 3 drivers (service, atmosphere and price) using 7-point scales. In R, we found store image correlated strongly with service (0.75), atmosphere (0.72) and price (0.67). We then estimated mixture regressions of store image on the 3 drivers in GLIMMIX, testing 1-6 segments. BIC was lowest at 2 segments. Because mixture models can settle on different solutions, we re-estimated the 2-segment model 6 times and kept the best fit, which explained 67% of the variation with clearly separated segments. Each region was then assigned to its most likely segment and mapped.</p></section>
-<section><h2>Key findings</h2><ul><li><strong>Service- and atmosphere-driven segment (69% of regions).</strong> Service and atmosphere shape store image most. This segment weights atmosphere nearly 2x and service 1.3x as heavily as the price-driven segment.</li><li><strong>Price-driven segment (31% of regions).</strong> Price perception is the strongest driver, with 1.2x the price sensitivity of the other segment. Atmosphere matters least.</li><li><strong>Segments ignore borders.</strong> Spain, Italy and Germany each split across both segments, so entry decisions need to be made region by region.</li></ul></section>
-<section><h2>Recommendations</h2><ol><li>Target the service- and atmosphere-driven segment, which matches Whole Foods' positioning.</li><li>Enter where that segment concentrates: eastern Germany and France, and northern Spain and Italy.</li><li>Position on service quality and a localized atmosphere, investing in hiring and training and partnering with local businesses.</li></ol></section>
-<section class="role c-a1 tint"><h2 class="role-label c-a1 ink">My role</h2><p>Worked across every stage: data exploration and correlation analysis in R, mixture model estimation and selection in GLIMMIX, mapping regions to segments, and writing the recommendations.</p></section>
-<section><h2>Limitations and what I'd do next</h2><ul><li><span class="badge c-s1 tint ink">Later reanalysis</span>Grocers typically expand into one concentrated area first to keep distribution efficient, but our recommendation spans 4 countries at once. A tighter first phase would be eastern Germany, where neighboring regions (Brandenburg, Dresden, Halle and Thuringia) each have an 89-99% probability of belonging to the service-driven segment, with expansion outward from there.</li><li>Service and atmosphere ratings are highly correlated (0.77), which makes their separate effects harder to tease apart.</li><li>The survey covers shoppers' current stores, not Whole Foods itself, and some regions have few respondents. A real entry decision would also need market size, income, competition and real estate costs.</li></ul></section>
+<section id="executive-summary" class="summary"><h2>Executive summary</h2><p>Whole Foods, positioned on service and store experience rather than price, was weighing entry into Europe. Using a European Commission survey of 1,669 shoppers in 105 regions across 7 countries, we grouped regions, not countries, by what drives shoppers' image of their grocery store. A 2-segment mixture regression revealed a service- and atmosphere-driven segment covering 69% of regions and a smaller price-driven segment. The segments cut across national borders. We recommended targeting the service- and atmosphere-driven segment, entering through eastern Germany and France and northern Spain and Italy, positioned on service quality and a localized atmosphere.</p></section>
+<section id="objective"><h2>Objective</h2><p>Identify which European regions best match Whole Foods' positioning, and recommend where to enter, how to position and how to roll out.</p></section>
+<section id="data-and-approach"><h2>Data and approach</h2><p>Shoppers rated their main grocery store on overall image and on 3 drivers (service, atmosphere and price) using 7-point scales. In R, we found store image correlated strongly with service (0.75), atmosphere (0.72) and price (0.67). We then estimated mixture regressions of store image on the 3 drivers in GLIMMIX, testing 1-6 segments. BIC was lowest at 2 segments. Because mixture models can settle on different solutions, we re-estimated the 2-segment model 6 times and kept the best fit, which explained 67% of the variation with clearly separated segments. Each region was then assigned to its most likely segment and mapped.</p></section>
+<section id="key-findings"><h2>Key findings</h2><ul><li><strong>Service- and atmosphere-driven segment (69% of regions).</strong> Service and atmosphere shape store image most. This segment weights atmosphere nearly 2x and service 1.3x as heavily as the price-driven segment.</li><li><strong>Price-driven segment (31% of regions).</strong> Price perception is the strongest driver, with 1.2x the price sensitivity of the other segment. Atmosphere matters least.</li><li><strong>Segments ignore borders.</strong> Spain, Italy and Germany each split across both segments, so entry decisions need to be made region by region.</li></ul></section>
+<section id="recommendations"><h2>Recommendations</h2><ol><li>Target the service- and atmosphere-driven segment, which matches Whole Foods' positioning.</li><li>Enter where that segment concentrates: eastern Germany and France, and northern Spain and Italy.</li><li>Position on service quality and a localized atmosphere, investing in hiring and training and partnering with local businesses.</li></ol></section>
+<section id="my-role" class="role box"><h2>My role</h2><p>Worked across every stage: data exploration and correlation analysis in R, mixture model estimation and selection in GLIMMIX, mapping regions to segments, and writing the recommendations.</p></section>
+<section id="limitations-and-what-i-d-do-next"><h2>Limitations and what I'd do next</h2><ul><li><span class="badge">Later reanalysis</span>Grocers typically expand into one concentrated area first to keep distribution efficient, but our recommendation spans 4 countries at once. A tighter first phase would be eastern Germany, where neighboring regions (Brandenburg, Dresden, Halle and Thuringia) each have an 89-99% probability of belonging to the service-driven segment, with expansion outward from there.</li><li>Service and atmosphere ratings are highly correlated (0.77), which makes their separate effects harder to tease apart.</li><li>The survey covers shoppers' current stores, not Whole Foods itself, and some regions have few respondents. A real entry decision would also need market size, income, competition and real estate costs.</li></ul></section>
 </article>
-<a class="next c-s1 tint" href="philips-coffee-maker">
-<span class="next-text"><span class="next-label ink">Next case study · Product design</span><span class="next-title">Designing the Coffee Maker 3 in 4 Buyers Want</span></span>
-<span class="next-arrow ink" aria-hidden="true">→</span>
+</div>
+<a class="next" href="philips-coffee-maker">
+<span class="next-block k-s1"><span class="label">Next</span></span>
+<span class="next-text"><span class="label muted">Product design</span><span class="next-title">Designing the Coffee Maker 3 in 4 Buyers Want</span></span>
+<span class="next-arrow" aria-hidden="true">→</span>
 </a>
 </main>
 <footer class="footer">
+<div class="footer-links">
 <a href="mailto:vepasrujana@gmail.com">vepasrujana@gmail.com</a>
 <a href="https://www.linkedin.com/in/sai-srujana-vepa/">LinkedIn</a>
 <a href="https://github.com/vepasrujana">GitHub</a>
+</div>
+
 </footer>
 </div>
 </body>

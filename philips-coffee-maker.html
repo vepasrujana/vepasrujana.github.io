@@ -9,7 +9,7 @@
 <meta property="og:description" content="Philips asked about water filters. Buyers wanted a grinder.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="analytics.js"></script>
 </head>
@@ -23,38 +23,48 @@
 <a href="https://www.linkedin.com/in/sai-srujana-vepa/">LinkedIn</a>
 </div>
 </nav>
-<main class="c-s1">
-<a class="back" href="projects">← All projects</a>
+<main>
+<a class="back label" href="projects">← All projects</a>
 <header class="page-head writeup-head">
-<p class="eyebrow ink">Product design · Consulting case study · Team of 5 · Fall 2024</p>
+<p class="label">Product design · Consulting case study · Team of 5 · Fall 2024</p>
 <h1>Designing the Coffee Maker 3 in 4 Buyers Want</h1>
 </header>
 <dl class="meta">
-<div><dt>Industry</dt><dd>Consumer appliances</dd></div>
-<div><dt>Tools</dt><dd>GLIMMIX, ChatGPT and Gemini (concept visuals)</dd></div>
-<div class="wide"><dt>Methods</dt><dd>Choice-based conjoint analysis, mixture multinomial logit, effect coding, market share simulation</dd></div>
+<div><dt class="label">Industry</dt><dd>Consumer appliances</dd></div>
+<div><dt class="label">Tools</dt><dd>GLIMMIX, ChatGPT and Gemini (concept visuals)</dd></div>
+<div class="wide"><dt class="label">Methods</dt><dd>Choice-based conjoint analysis, mixture multinomial logit, effect coding, market share simulation</dd></div>
 </dl>
-<div class="tiles"><div class="tile tint"><p class="tile-value ink">13% → 52%</p><p class="tile-label ink">projected Philips market share</p></div><div class="tile tint"><p class="tile-value ink">74%</p><p class="tile-label ink">of buyers in the target segment</p></div><div class="tile tint"><p class="tile-value ink">+1.12</p><p class="tile-label ink">auto-grinder part-worth, the strongest preference in the study</p></div></div>
+<div class="tiles k-s1"><div class="tile"><p class="tile-value">13% → 52%</p><p class="label tile-label">projected Philips market share</p></div><div class="tile"><p class="tile-value">74%</p><p class="label tile-label">of buyers in the target segment</p></div><div class="tile"><p class="tile-value">+1.12</p><p class="label tile-label">auto-grinder part-worth, the strongest preference in the study</p></div></div>
+<div class="writeup-layout">
+<aside class="toc" aria-label="Contents">
+<p class="label">Contents</p>
+<ol><li><a href="#executive-summary"><span class="label">01</span>Executive summary</a></li><li><a href="#objective"><span class="label">02</span>Objective</a></li><li><a href="#data-and-approach"><span class="label">03</span>Data and approach</a></li><li><a href="#key-findings"><span class="label">04</span>Key findings</a></li><li><a href="#recommendations"><span class="label">05</span>Recommendations</a></li><li><a href="#my-role"><span class="label">06</span>My role</a></li><li><a href="#limitations-and-what-i-d-do-next"><span class="label">07</span>Limitations and what I'd do next</a></li></ol>
+</aside>
 <article class="writeup">
-<section class="summary"><h2>Executive summary</h2><p>Philips held 13% of a 5-product coffee maker market and wanted to know whether adding a water filter, an auto-grinder or both would grow its share. Using a choice-based conjoint study (185 respondents, 1,480 choices), we found 2 consumer segments with nearly opposite preferences. The larger segment (74%), feature-seeking value buyers, wants a 15-cup machine with an auto-grinder at $59, has no use for a water filter, and leans toward the Philips brand. We recommended building exactly that product. It is projected to lift Philips' overall share from 13% to 52%, drawing mostly from Cuisinart's $99 grinder model, which falls from 52% to 18%.</p></section>
-<section><h2>Objective</h2><p>Determine whether a water filter or auto-grinder would grow Philips' share, design the best new product, and predict its effect on competing products.</p></section>
-<section><h2>Data and approach</h2><p>The study used 16 product profiles from a fractional factorial design across 5 attributes:</p>
+<section id="executive-summary" class="summary"><h2>Executive summary</h2><p>Philips held 13% of a 5-product coffee maker market and wanted to know whether adding a water filter, an auto-grinder or both would grow its share. Using a choice-based conjoint study (185 respondents, 1,480 choices), we found 2 consumer segments with nearly opposite preferences. The larger segment (74%), feature-seeking value buyers, wants a 15-cup machine with an auto-grinder at $59, has no use for a water filter, and leans toward the Philips brand. We recommended building exactly that product. It is projected to lift Philips' overall share from 13% to 52%, drawing mostly from Cuisinart's $99 grinder model, which falls from 52% to 18%.</p></section>
+<section id="objective"><h2>Objective</h2><p>Determine whether a water filter or auto-grinder would grow Philips' share, design the best new product, and predict its effect on competing products.</p></section>
+<section id="data-and-approach"><h2>Data and approach</h2><p>The study used 16 product profiles from a fractional factorial design across 5 attributes:</p>
 <ul><li>Brand: Philips, Krups or Cuisinart</li><li>Capacity: 5, 10 or 15 cups</li><li>Price: $59, $79 or $99</li><li>Water filter: yes or no</li><li>Auto-grinder: yes or no</li></ul>
 <p>Each respondent chose from 8 sets of 3 profiles. We estimated mixture multinomial logit models on the effect-coded attributes in GLIMMIX, and BIC selected 2 segments. We used each segment's part-worths to identify its ideal product and to simulate market shares against the 5 existing products. We also visualized each segment's ideal product with ChatGPT and Gemini.</p></section>
-<section><h2>Key findings</h2><ul><li><strong>Feature-seeking value buyers (74%).</strong> The auto-grinder is the strongest preference in the study (+1.12). They prefer a 15-cup capacity (+0.49) and the $59 price (+0.19), reject a water filter (-0.85), and are the only segment with a significant Philips brand preference (+0.18).</li><li><strong>Simplicity seekers (26%).</strong> They prefer a 5-cup machine (+0.41) at $79 (+0.57), reject an auto-grinder (-0.70), and show no significant brand or filter preference.</li><li><strong>The answer to Philips' question.</strong> Add the grinder and skip the filter. Neither segment values a filter.</li><li><strong>Where share is today.</strong> Cuisinart's 10-cup, $99 grinder model held 52% of the market as the only product with a grinder.</li></ul></section>
-<section><h2>Recommendations</h2><ol><li>Launch a 15-cup Philips coffee maker with an auto-grinder and no water filter, priced at $59 and aimed at the larger segment. Projected overall share rises from 13% to 52%.</li><li>Use the $59 price and the segment's existing Philips preference to compete directly against Cuisinart's $99 grinder model.</li></ol></section>
-<section class="role c-a1 tint"><h2 class="role-label c-a1 ink">My role</h2><p>Worked across every stage: model estimation and segment selection in GLIMMIX, interpreting segment preferences, the market share simulations, and writing the recommendations.</p></section>
-<section><h2>Limitations and what I'd do next</h2><ul><li>Market share is not profit. There was no cost data, and a $59 machine with a grinder may not be profitable. Next, I would simulate profit using unit costs.</li><li>In the larger segment, price preferences don't run in order: $99 is rated above $79. This suggests buyers may read price as a signal of quality, or that the price effect is weak. Testing more price levels would clarify it.</li><li>The results reflect stated choices in a survey, not actual purchases, and there were no demographics for targeting either segment.</li></ul></section>
+<section id="key-findings"><h2>Key findings</h2><ul><li><strong>Feature-seeking value buyers (74%).</strong> The auto-grinder is the strongest preference in the study (+1.12). They prefer a 15-cup capacity (+0.49) and the $59 price (+0.19), reject a water filter (-0.85), and are the only segment with a significant Philips brand preference (+0.18).</li><li><strong>Simplicity seekers (26%).</strong> They prefer a 5-cup machine (+0.41) at $79 (+0.57), reject an auto-grinder (-0.70), and show no significant brand or filter preference.</li><li><strong>The answer to Philips' question.</strong> Add the grinder and skip the filter. Neither segment values a filter.</li><li><strong>Where share is today.</strong> Cuisinart's 10-cup, $99 grinder model held 52% of the market as the only product with a grinder.</li></ul></section>
+<section id="recommendations"><h2>Recommendations</h2><ol><li>Launch a 15-cup Philips coffee maker with an auto-grinder and no water filter, priced at $59 and aimed at the larger segment. Projected overall share rises from 13% to 52%.</li><li>Use the $59 price and the segment's existing Philips preference to compete directly against Cuisinart's $99 grinder model.</li></ol></section>
+<section id="my-role" class="role box"><h2>My role</h2><p>Worked across every stage: model estimation and segment selection in GLIMMIX, interpreting segment preferences, the market share simulations, and writing the recommendations.</p></section>
+<section id="limitations-and-what-i-d-do-next"><h2>Limitations and what I'd do next</h2><ul><li>Market share is not profit. There was no cost data, and a $59 machine with a grinder may not be profitable. Next, I would simulate profit using unit costs.</li><li>In the larger segment, price preferences don't run in order: $99 is rated above $79. This suggests buyers may read price as a signal of quality, or that the price effect is weak. Testing more price levels would clarify it.</li><li>The results reflect stated choices in a survey, not actual purchases, and there were no demographics for targeting either segment.</li></ul></section>
 </article>
-<a class="next c-a2 tint" href="tropicana-pricing">
-<span class="next-text"><span class="next-label ink">Next case study · Pricing</span><span class="next-title">Why Tropicana Should Cost $3.22 at Every Store</span></span>
-<span class="next-arrow ink" aria-hidden="true">→</span>
+</div>
+<a class="next" href="tropicana-pricing">
+<span class="next-block k-a1"><span class="label">Next</span></span>
+<span class="next-text"><span class="label muted">Pricing</span><span class="next-title">Why Tropicana Should Cost $3.22 at Every Store</span></span>
+<span class="next-arrow" aria-hidden="true">→</span>
 </a>
 </main>
 <footer class="footer">
+<div class="footer-links">
 <a href="mailto:vepasrujana@gmail.com">vepasrujana@gmail.com</a>
 <a href="https://www.linkedin.com/in/sai-srujana-vepa/">LinkedIn</a>
 <a href="https://github.com/vepasrujana">GitHub</a>
+</div>
+
 </footer>
 </div>
 </body>

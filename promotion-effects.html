@@ -9,7 +9,7 @@
 <meta property="og:description" content="Three decisions, three models: whether to buy, which brand, and how much. Only the first two responded to promotions.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="analytics.js"></script>
 </head>
@@ -23,38 +23,48 @@
 <a href="https://www.linkedin.com/in/sai-srujana-vepa/">LinkedIn</a>
 </div>
 </nav>
-<main class="c-a3">
-<a class="back" href="projects">← All projects</a>
+<main>
+<a class="back label" href="projects">← All projects</a>
 <header class="page-head writeup-head">
-<p class="eyebrow ink">Promotions · Consulting case study · Team of 5 · Fall 2024</p>
+<p class="label">Promotions · Consulting case study · Team of 5 · Fall 2024</p>
 <h1>Displays Beat Discounts in the Laundry Aisle</h1>
 </header>
 <dl class="meta">
-<div><dt>Industry</dt><dd>Consumer packaged goods, grocery retail</dd></div>
-<div><dt>Tools</dt><dd>SAS, Excel</dd></div>
-<div class="wide"><dt>Methods</dt><dd>Binary logit, multinomial logit, semi-log regression, profit and pass-through simulation</dd></div>
+<div><dt class="label">Industry</dt><dd>Consumer packaged goods, grocery retail</dd></div>
+<div><dt class="label">Tools</dt><dd>SAS, Excel</dd></div>
+<div class="wide"><dt class="label">Methods</dt><dd>Binary logit, multinomial logit, semi-log regression, profit and pass-through simulation</dd></div>
 </dl>
-<div class="tiles"><div class="tile tint"><p class="tile-value ink">+270%</p><p class="tile-label ink">brand choice odds from in-store displays</p></div><div class="tile tint"><p class="tile-value ink">2.9-4.2x</p><p class="tile-label ink">volume lift from displays</p></div><div class="tile tint"><p class="tile-value ink">+60% / -11%</p><p class="tile-label ink">retailer vs. manufacturer profit, Tide at 70% pass-through</p></div></div>
+<div class="tiles k-a3"><div class="tile"><p class="tile-value">+270%</p><p class="label tile-label">brand choice odds from in-store displays</p></div><div class="tile"><p class="tile-value">2.9-4.2x</p><p class="label tile-label">volume lift from displays</p></div><div class="tile"><p class="tile-value">+60% / -11%</p><p class="label tile-label">retailer vs. manufacturer profit, Tide at 70% pass-through</p></div></div>
+<div class="writeup-layout">
+<aside class="toc" aria-label="Contents">
+<p class="label">Contents</p>
+<ol><li><a href="#executive-summary"><span class="label">01</span>Executive summary</a></li><li><a href="#objective"><span class="label">02</span>Objective</a></li><li><a href="#data-and-approach"><span class="label">03</span>Data and approach</a></li><li><a href="#key-findings"><span class="label">04</span>Key findings</a></li><li><a href="#recommendations"><span class="label">05</span>Recommendations</a></li><li><a href="#my-role"><span class="label">06</span>My role</a></li><li><a href="#limitations-and-what-i-d-do-next"><span class="label">07</span>Limitations and what I'd do next</a></li></ol>
+</aside>
 <article class="writeup">
-<section class="summary"><h2>Executive summary</h2><p>Using IRI household scanner data, we modeled 3 separate shopper decisions for liquid laundry detergent: whether to buy at all, which of 4 brands to buy (Wisk, All, Tide, Cheer), and how much to buy. We then simulated how price cuts affect gross profit for the retailer and the manufacturers. In-store displays were the strongest lever for brand choice, raising choice odds by 270% vs. 104% for price cuts, and they lifted expected volume 2.9-4.2x. Price cuts were profitable for both sides when the retailer passed the full discount to shoppers. When it passed on only 70%, the retailer's gains grew to as much as 60%, while the manufacturers of Tide and All lost profit. We recommended full pass-through for high-demand brands, at least 70% for lower-demand brands, and prioritizing displays over deep discounts.</p></section>
-<section><h2>Objective</h2><p>Measure how price cuts, displays and feature ads affect each stage of the purchase decision, and assess the profit impact of price cuts for the retailer and the manufacturers.</p></section>
-<section><h2>Data and approach</h2><p>The data covered 177 households across 4 stores over 135 weeks: 19,157 household-weeks and 781 purchase occasions. We built a 3-stage model of purchase behavior:</p>
+<section id="executive-summary" class="summary"><h2>Executive summary</h2><p>Using IRI household scanner data, we modeled 3 separate shopper decisions for liquid laundry detergent: whether to buy at all, which of 4 brands to buy (Wisk, All, Tide, Cheer), and how much to buy. We then simulated how price cuts affect gross profit for the retailer and the manufacturers. In-store displays were the strongest lever for brand choice, raising choice odds by 270% vs. 104% for price cuts, and they lifted expected volume 2.9-4.2x. Price cuts were profitable for both sides when the retailer passed the full discount to shoppers. When it passed on only 70%, the retailer's gains grew to as much as 60%, while the manufacturers of Tide and All lost profit. We recommended full pass-through for high-demand brands, at least 70% for lower-demand brands, and prioritizing displays over deep discounts.</p></section>
+<section id="objective"><h2>Objective</h2><p>Measure how price cuts, displays and feature ads affect each stage of the purchase decision, and assess the profit impact of price cuts for the retailer and the manufacturers.</p></section>
+<section id="data-and-approach"><h2>Data and approach</h2><p>The data covered 177 households across 4 stores over 135 weeks: 19,157 household-weeks and 781 purchase occasions. We built a 3-stage model of purchase behavior:</p>
 <ol><li>A binary logit for whether a household buys in the category, selected using BIC.</li><li>A multinomial logit for which brand it chooses.</li><li>4 brand-level semi-log models for how much it buys.</li></ol>
 <p>Expected volume is the product of all 3 stages. We simulated each promotion separately using management's planned price cuts. We then calculated gross profit for the retailer and manufacturers, assuming 20% retail and 45% manufacturer margins, under 100% and 70% pass-through of the discount.</p></section>
-<section><h2>Key findings</h2><ul><li><strong>Price cuts get people to buy.</strong> A 1¢/oz category price cut raised the odds of buying detergent in a given week by 190%.</li><li><strong>Promotions pull purchases forward.</strong> Households whose last purchase was on promotion were 41% less likely to buy, consistent with stocking up.</li><li><strong>Displays win the brand decision.</strong> Displays raised brand choice odds by 270%, vs. 104% for a 1¢/oz price cut and 48% for feature ads.</li><li><strong>Quantity is habit.</strong> How much a household bought depended almost entirely on its usual purchase size. Promotions worked by triggering purchases and brand switches, not by growing basket size.</li><li><strong>Volume lift by promotion type.</strong> Displays lifted expected volume 2.9-4.2x over baseline, vs. 2.1-2.4x for feature ads and 1.7-2.3x for price cuts.</li><li><strong>Profit at full pass-through.</strong> Price cuts raised retailer category profit by 20-36% and manufacturer profit by 18-31%.</li><li><strong>Profit at 70% pass-through.</strong> A Tide price cut raised retailer category profit by 60% but cut Tide's manufacturer profit by 11%. For All, manufacturer profit fell 32%.</li></ul></section>
-<section><h2>Recommendations</h2><ol><li>Use full pass-through for high-demand brands like Tide, and at least 70% for lower-demand brands.</li><li>Prioritize in-store displays over deep discounts. They drive the most volume without eroding margin.</li><li>Apply price cuts carefully, especially at lower pass-through rates, since shoppers who buy on promotion delay their next purchase.</li></ol></section>
-<section class="role c-a1 tint"><h2 class="role-label c-a1 ink">My role</h2><p>Worked across every stage: data exploration, building and selecting the 3-stage model in SAS, the volume and profit simulations, and writing the recommendations.</p></section>
-<section><h2>Limitations and what I'd do next</h2><ul><li><span class="badge c-s1 tint ink">Later reanalysis</span>Manufacturer profit was calculated brand by brand, but Tide and Cheer are both P&amp;G brands, and Wisk and All are both Unilever. A Tide price cut pulls some sales away from Cheer. Netting that out, P&amp;G's gain from a Tide price cut at full pass-through falls from 18.5% to about 10%. Manufacturer promotion decisions should be evaluated across the whole brand portfolio.</li><li>Promotion costs, such as display fees and ad spend, were not available, so the results show gross profit before promotion costs.</li><li>The data covers a single category, in one market, from the late 1990s, and each promotion was simulated in isolation rather than in combination.</li></ul></section>
+<section id="key-findings"><h2>Key findings</h2><ul><li><strong>Price cuts get people to buy.</strong> A 1¢/oz category price cut raised the odds of buying detergent in a given week by 190%.</li><li><strong>Promotions pull purchases forward.</strong> Households whose last purchase was on promotion were 41% less likely to buy, consistent with stocking up.</li><li><strong>Displays win the brand decision.</strong> Displays raised brand choice odds by 270%, vs. 104% for a 1¢/oz price cut and 48% for feature ads.</li><li><strong>Quantity is habit.</strong> How much a household bought depended almost entirely on its usual purchase size. Promotions worked by triggering purchases and brand switches, not by growing basket size.</li><li><strong>Volume lift by promotion type.</strong> Displays lifted expected volume 2.9-4.2x over baseline, vs. 2.1-2.4x for feature ads and 1.7-2.3x for price cuts.</li><li><strong>Profit at full pass-through.</strong> Price cuts raised retailer category profit by 20-36% and manufacturer profit by 18-31%.</li><li><strong>Profit at 70% pass-through.</strong> A Tide price cut raised retailer category profit by 60% but cut Tide's manufacturer profit by 11%. For All, manufacturer profit fell 32%.</li></ul></section>
+<section id="recommendations"><h2>Recommendations</h2><ol><li>Use full pass-through for high-demand brands like Tide, and at least 70% for lower-demand brands.</li><li>Prioritize in-store displays over deep discounts. They drive the most volume without eroding margin.</li><li>Apply price cuts carefully, especially at lower pass-through rates, since shoppers who buy on promotion delay their next purchase.</li></ol></section>
+<section id="my-role" class="role box"><h2>My role</h2><p>Worked across every stage: data exploration, building and selecting the 3-stage model in SAS, the volume and profit simulations, and writing the recommendations.</p></section>
+<section id="limitations-and-what-i-d-do-next"><h2>Limitations and what I'd do next</h2><ul><li><span class="badge">Later reanalysis</span>Manufacturer profit was calculated brand by brand, but Tide and Cheer are both P&amp;G brands, and Wisk and All are both Unilever. A Tide price cut pulls some sales away from Cheer. Netting that out, P&amp;G's gain from a Tide price cut at full pass-through falls from 18.5% to about 10%. Manufacturer promotion decisions should be evaluated across the whole brand portfolio.</li><li>Promotion costs, such as display fees and ad spend, were not available, so the results show gross profit before promotion costs.</li><li>The data covers a single category, in one market, from the late 1990s, and each promotion was simulated in isolation rather than in combination.</li></ul></section>
 </article>
-<a class="next c-a1 tint" href="whole-foods-europe">
-<span class="next-text"><span class="next-label ink">Next case study · Segmentation</span><span class="next-title">Which Parts of Europe Want a Whole Foods?</span></span>
-<span class="next-arrow ink" aria-hidden="true">→</span>
+</div>
+<a class="next" href="whole-foods-europe">
+<span class="next-block k-a2"><span class="label">Next</span></span>
+<span class="next-text"><span class="label muted">Segmentation</span><span class="next-title">Which Parts of Europe Want a Whole Foods?</span></span>
+<span class="next-arrow" aria-hidden="true">→</span>
 </a>
 </main>
 <footer class="footer">
+<div class="footer-links">
 <a href="mailto:vepasrujana@gmail.com">vepasrujana@gmail.com</a>
 <a href="https://www.linkedin.com/in/sai-srujana-vepa/">LinkedIn</a>
 <a href="https://github.com/vepasrujana">GitHub</a>
+</div>
+
 </footer>
 </div>
 </body>
