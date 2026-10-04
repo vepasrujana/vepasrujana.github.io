@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why Tropicana Should Cost $3.22 at Every Store | Sai Srujana Vepa</title>
+<meta name="description" content="The model said $3.22. Shoppers&#x27; fondness for prices ending in 9 said $3.29.">
+<meta property="og:title" content="Why Tropicana Should Cost $3.22 at Every Store | Sai Srujana Vepa">
+<meta property="og:description" content="The model said $3.22. Shoppers&#x27; fondness for prices ending in 9 said $3.29.">
+<meta property="og:type" content="website">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/analytics.js"></script>
+</head>
+<body>
+<div class="wrap">
+<nav class="nav" aria-label="Main">
+<a class="brand" href="../index.html">Sai Srujana Vepa</a>
+<div class="nav-links">
+<a href="../projects.html" aria-current="page">Projects</a>
+<a href="../resume.html">Resume</a>
+<a href="https://www.linkedin.com/in/sai-srujana-vepa/">LinkedIn</a>
+</div>
+</nav>
+<main class="c-a2">
+<a class="back" href="../projects.html">← All projects</a>
+<header class="page-head writeup-head">
+<p class="eyebrow ink">Pricing · Consulting case study · Team of 5 · Fall 2024</p>
+<h1>Why Tropicana Should Cost $3.22 at Every Store</h1>
+</header>
+<dl class="meta">
+<div><dt>Industry</dt><dd>Grocery retail</dd></div>
+<div><dt>Tools</dt><dd>SAS</dd></div>
+<div class="wide"><dt>Methods</dt><dd>Linear, semi-log and log-log regression, price elasticity estimation, profit optimization</dd></div>
+</dl>
+<div class="tiles"><div class="tile tint"><p class="tile-value ink">$3.22</p><p class="tile-label ink">profit-maximizing price</p></div><div class="tile tint"><p class="tile-value ink">about -5</p><p class="tile-label ink">price elasticity at the optimal price</p></div><div class="tile tint"><p class="tile-value ink">+13%</p><p class="tile-label ink">projected gross profit</p></div></div>
+<article class="writeup">
+<section class="summary"><h2>Executive summary</h2><p>A regional grocery chain with 15 Midwest stores wanted to replace store-by-store pricing of its best-selling orange juice item, Tropicana 64 oz, with one standard price that maximizes gross profit. We modeled two years of weekly sales across all 15 stores and found that demand is highly price-sensitive. Against a $2.57 wholesale cost, the profit-maximizing price is $3.22. That price is projected to raise gross profit by 13% and volume by about 80% compared with the $3.60 historical average price. Prices ending in 9 also lifted sales by about 21%, which supported $3.29 as a locally adjustable price point.</p></section>
+<section><h2>Objective</h2><p>Find the single retail price that maximizes the chain's gross profit on Tropicana 64 oz for the week after the data period, with no promotions planned.</p></section>
+<section><h2>Data and approach</h2><p>The data covered 1,560 store-weeks (15 stores over 104 weeks), with weekly volume, retail price and whether the item was on display or in a feature ad. We added store, quarter, time trend and price-ending variables, for 21 predictors in total. We compared linear, semi-log and log-log regressions on fit and residual behavior. The linear model explained only 15% of the variation, with poorly behaved residuals. The semi-log model fit best, explaining 48%, or 3x the linear baseline, so we selected it. For a semi-log demand model, the profit-maximizing price is wholesale cost minus 1 divided by the price coefficient, which gives $3.22.</p></section>
+<section><h2>Key findings</h2><ul><li><strong>Demand is highly price-sensitive.</strong> Each $0.10 price increase cuts volume by about 14%, and price elasticity is about -5 at the optimal price.</li><li><strong>Stores differ widely.</strong> After controlling for price and promotions, baseline sales varied by up to 60% across stores.</li><li><strong>Sales are seasonal.</strong> Quarters 1-3 sold 16-24% more than quarter 4.</li><li><strong>Price endings matter.</strong> Prices ending in 9 lifted sales by about 21%.</li><li><strong>Promotions help modestly.</strong> In-store displays and feature ads added about 8% to sales.</li><li><strong>The profit case.</strong> At $3.22, projected gross profit rises 13% and volume about 80% over the $3.60 historical average price. Gross profit rises 27% over the $3.78 average non-promotion price.</li></ul></section>
+<section><h2>Recommendations</h2><ol><li>Standardize the price at about $3.22 across all 15 stores.</li><li>Allow $3.29 as a price point stores can use when local competition calls for it, taking advantage of the price-ending effect.</li><li>Run displays and feature ads intermittently to lift volume without breaking the standard price.</li></ol></section>
+<section class="role c-a1 tint"><h2 class="role-label c-a1 ink">My role</h2><p>Worked across every stage: data exploration, model building and selection in SAS, the profit calculations, and writing the recommendations.</p></section>
+<section><h2>Limitations and what I'd do next</h2><ul><li><span class="badge c-s1 tint ink">Later reanalysis</span>Because the model includes a price-ending effect, $3.22 is not actually the most profitable price a store would charge. Re-solving with that effect, $3.19 or $3.29 earns about 20% more gross profit than $3.22. This supports $3.29 as the standard price, provided the ending-in-9 effect reflects real shopper behavior and not which weeks happened to use those prices.</li><li>Store managers set prices partly in response to expected demand, which can bias the elasticity estimate. With cost-shift data, I would estimate elasticity using cost-driven price changes.</li><li>The analysis treats Tropicana 64 oz as the only item in its category, so it ignores sales shifting to or from other orange juice items, and it assumes the wholesale cost stays fixed.</li></ul></section>
+</article>
+<a class="next c-s2 tint" href="loreal-print-ads.html">
+<span class="next-text"><span class="next-label ink">Next case study · Advertising</span><span class="next-title">L'Oréal's Ad Was Seen but Not Remembered. Eye-Tracking Data Showed Why.</span></span>
+<span class="next-arrow ink" aria-hidden="true">→</span>
+</a>
+</main>
+<footer class="footer">
+<a href="mailto:vepasrujana@gmail.com">vepasrujana@gmail.com</a>
+<a href="https://www.linkedin.com/in/sai-srujana-vepa/">LinkedIn</a>
+<a href="https://github.com/vepasrujana">GitHub</a>
+</footer>
+</div>
+</body>
+</html>
