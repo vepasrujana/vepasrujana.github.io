@@ -3,12 +3,13 @@
    including the doodles on the home page.
    ============================================================ */
 :root {
-  --accent-1: #E46A8B;     /* grapefruit */
+  --accent-1: #E87B97;     /* grapefruit */
   --accent-2: #6FC0D6;     /* seabreeze */
   --accent-3: #F4C24D;     /* lemon */
   --secondary-1: #B3C95A;  /* lime */
   --secondary-2: #B7A7EA;  /* lilac */
   --reserve: #F2785C;      /* papaya (not used yet) */
+  --reserve-2: #3FB8AF;    /* lagoon teal (not used yet) */
 
   --base: #F7F3EA;         /* champagne background */
   --ink: #1B2A3A;          /* navy text and lines */
