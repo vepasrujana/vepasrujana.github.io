@@ -46,6 +46,15 @@ h1, h2, h3 { font-weight: 400; }
 .nav-links a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--accent-1); text-decoration-thickness: 2px; text-underline-offset: 6px; }
 
+/* Icon links */
+.icon-link { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; color: var(--ink); }
+.icon-link .icon { width: 20px; height: 20px; display: block; transition: transform .15s ease; }
+.icon-link:hover .icon { transform: translateY(-2px); }
+.nav-links a.icon-link { padding: 0 6px 0 10px; }
+.nav-links a.icon-link:hover { text-decoration: none; }
+.footer-links { align-items: center; }
+.footer a.icon-link { min-width: 44px; }
+
 /* Buttons and underlined links */
 .btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 1px solid var(--ink); border-radius: 999px; background: var(--base); font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; transition: background .15s, color .15s; }
 .btn:hover { background: var(--ink); color: var(--base); }
@@ -78,7 +87,7 @@ a.hl:hover { background-image: linear-gradient(var(--hl), var(--hl)); }
 .row-label { flex: 1 1 220px; padding-top: 6px; }
 .row-body { flex: 999 1 600px; min-width: 0; }
 .about { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px; }
-.about img { flex: 0 0 auto; width: 160px; height: 200px; object-fit: cover; object-position: 50% 28%; border: 1px solid var(--ink); }
+.about img { flex: 0 0 auto; width: 160px; height: 200px; object-fit: cover; object-position: 50% 30%; border: 1px solid var(--ink); }
 .about .prose { flex: 1 1 360px; }
 .now { display: flex; flex-wrap: wrap; max-width: 760px; }
 .now-tag { flex: 1 1 200px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; padding: 22px; }
